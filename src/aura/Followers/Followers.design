@@ -1,0 +1,4 @@
+<design:component >
+    <design:attribute name="header" label="Title" description="The title (header) that will appear in the component.  If not specified, it will default to &quot;Followers&quot;." />
+    <design:attribute name="hideIfNoFollowers" label="Hide entirely if there are no followers" />
+</design:component>

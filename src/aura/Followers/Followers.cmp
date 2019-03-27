@@ -1,0 +1,37 @@
+<aura:component controller="FollowersController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    
+    <aura:attribute name="header" type="String" default="Followers" access="global" />
+    <aura:attribute name="hideIfNoFollowers" type="boolean" default="true" access="global" />
+    
+    <aura:attribute name="headerTitle" type="Aura.Component[]" access="private">        
+        <h2><b>{!v.header}</b></h2>
+    </aura:attribute>
+    <aura:attribute name="users" type="User[]" access="private" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:if isTrue="{!not(and(v.hideIfNoFollowers, empty(v.users)))}">
+        <lightning:card title="{!v.headerTitle}" iconName="custom:custom103">
+            <aura:if isTrue="{!empty(v.users)}">
+                <p class="slds-p-around--medium">
+                    No one is currently following this record.
+                </p>
+                <aura:set attribute="else">
+                    <lightning:layout multipleRows="false" horizontalAlign="spread">
+                        <aura:iteration items="{!v.users}" var="user">
+                            <lightning:layoutItem padding="horizontal-medium">                       
+                                <div class="picCen">
+                                    <img class="pic" src="{!user.SmallPhotoUrl}" />
+                                </div>
+                                <div class="slds-text-body--regular slds-text-align--center slds-truncate">
+                                    <a href="{!'/' + user.Id}" target="_parent">{!user.Name}</a>
+                                </div>
+                            </lightning:layoutItem>                                       
+                        </aura:iteration>
+                    </lightning:layout>            
+                </aura:set>
+            </aura:if>
+        </lightning:card>
+    </aura:if>                                                                                                                                
+    
+</aura:component>

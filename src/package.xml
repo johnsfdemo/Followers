@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Followers</fullName>
+    <description>Lightning component that shows the followers of a record.</description>
+    <types>
+        <members>FollowersController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Followers</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <version>45.0</version>
+</Package>
