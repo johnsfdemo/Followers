@@ -5,9 +5,13 @@ This package includes a Lightning component for displaying the current followers
 
 ## Followers Lightning Component
 
+Here is how the Lightning component looks on a record page:
+
 ![Followers Lightning Component](/images/Followers_Picture.png)
 
-*Credits:* The Followers Lightning component is based on the work of ...
+To include the component on a page, simply use Lightning App Builder as shown:
+
+![Lightning App Builder](/images/Followers_Lightning_App_Builder.png)
 
 
 ## CreateFollower
