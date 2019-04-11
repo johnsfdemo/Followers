@@ -17,7 +17,7 @@
                     No one is currently following this record.
                 </p>
                 <aura:set attribute="else">
-                    <lightning:layout multipleRows="false" horizontalAlign="spread">
+                    <lightning:layout multipleRows="false" horizontalAlign="start">
                         <aura:iteration items="{!v.users}" var="user">
                             <lightning:layoutItem padding="horizontal-medium">                       
                                 <div class="picCen">

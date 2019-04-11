@@ -1,6 +1,6 @@
 public class FollowersController {
     
-	@AuraEnabled
+    @AuraEnabled
     public static List<User> getFollowers(Id recordId) {
         List<Id> followers = new List<Id>();        
         for (EntitySubscription sub : [SELECT SubscriberId FROM EntitySubscription WHERE ParentId = :recordId])

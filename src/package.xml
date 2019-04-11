@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Followers</fullName>
-    <description>Lightning component that shows the followers of a record.</description>
+    <description>Consists of a Lightning component that displays a list of the followers of a record as well as an invocable Apex class to attach a follower to a record that can be used with Process Builder or Flow Builder.</description>
     <types>
+        <members>CreateFollower</members>
         <members>FollowersController</members>
         <name>ApexClass</name>
     </types>
@@ -10,5 +11,5 @@
         <members>Followers</members>
         <name>AuraDefinitionBundle</name>
     </types>
-    <version>45.0</version>
+    <version>44.0</version>
 </Package>
