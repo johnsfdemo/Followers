@@ -13,8 +13,6 @@ To include the component on a page, simply use Lightning App Builder as shown:
 
 ![Lightning App Builder](/images/Followers_Lightning_App_Builder.png)
 
-*Credit:* This component is based on *Lightning Followers*, written by Daniel Wall.
-
 
 ## CreateFollower
 
@@ -35,3 +33,7 @@ Simply click the button below and log into your org:
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
+
+## Credits
+
+This component is based on *Lightning Followers*, written by Daniel Wall at [Salesforce](https://www.salesforce.com).
