@@ -49,7 +49,7 @@ global without sharing class CreateFollower {
                 result.status = SUCCESS;
             } catch (DMLException e) {
                 result.status = FAILURE;
-                result.message = 'Could not create subsciption for user Id = "' + records[0].follower + '" on record Id = "' + records[0].recordId + '"';
+                result.message = 'Could not create subsciption for user Id = "' + records[0].follower + '" on record Id = "' + records[0].recordId + '": ' + e.getMessage();
                 System.debug(result.message);
             }
         
