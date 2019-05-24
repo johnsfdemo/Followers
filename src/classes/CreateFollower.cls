@@ -16,10 +16,10 @@ global without sharing class CreateFollower {
     private static final String FAILURE = 'FAILURE';
     
     global class Requests {
-        @InvocableVariable
+        @InvocableVariable(required=true)
         global Id recordId;                 // The ID of the record to follow
         
-        @InvocableVariable
+        @InvocableVariable(required=true)
         global Id follower;                 // The user ID of the follower
     }
     
